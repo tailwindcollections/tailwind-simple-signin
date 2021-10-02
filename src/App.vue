@@ -1,6 +1,9 @@
 <template>
   <div class="flex justify-between min-h-screen font-sans">
-    <div class="relative w-1/2 bg-cover" style="background-image: url('/img/hero.png')">
+    <div
+      class="hidden relative w-1/2 bg-center bg-cover lg:block"
+      style="background-image: url('/img/hero.png')"
+    >
       <div class="flex absolute bottom-20 justify-center w-full">
         <div class="max-w-md text-center">
           <span class="text-3xl font-bold leading-loose text-gray-900">
@@ -25,25 +28,27 @@
         </div>
       </div>
     </div>
-    <div class="w-1/2">
-      <div class="flex flex-col px-24 pt-10">
-        <LogoIcon class="self-end w-32" />
+    <div class="flex-1 mx-auto max-w-2xl">
+      <div class="flex flex-col px-8 pt-10 lg:px-14 xl:px-24">
+        <LogoIcon class="self-center w-32 md:self-end" />
         <div class="pt-20 pb-6">
-          <h1 class="text-3xl font-bold tracking-wide leading-loose">
+          <h1 class="text-3xl font-bold tracking-wide leading-loose whitespace-nowrap">
             Hi, Welcome back!
           </h1>
           <span class="font-light text-gray-500">
             Login now to manage your job made easy.
           </span>
-          <div class="flex justify-between items-center pt-10 space-x-6">
+          <div
+            class="flex flex-wrap gap-y-4 gap-x-6 justify-between items-center pt-10 whitespace-nowrap"
+          >
             <button
-              class="flex items-center justify-center w-1/2 py-4.5 rounded-lg bg-white border border-gray-400 whitespace-nowrap hover:bg-gray-50 focus:outline-none focus:ring-gray-100 focus:ring-4"
+              class="flex items-center justify-center flex-1 py-4.5 px-3 rounded-lg bg-white border border-gray-400 whitespace-nowrap hover:bg-gray-50 focus:outline-none focus:ring-gray-100 focus:ring-4"
             >
               <GoogleIcon class="w-6 h-6" />
               <span class="pl-3 font-medium text-gray-900">Sign in with Google</span>
             </button>
             <button
-              class="flex items-center justify-center w-1/2 py-4.5 rounded-lg bg-blue-500 whitespace-nowrap hover:bg-blue-600 focus:outline-none focus:ring-4 focus:ring-gray-100"
+              class="flex items-center justify-center flex-1 py-4.5 px-3 rounded-lg bg-blue-500 whitespace-nowrap hover:bg-blue-600 focus:outline-none focus:ring-4 focus:ring-gray-100"
             >
               <FacebookIcon class="w-6 h-6" />
               <span class="pl-3 font-medium text-white">Sign in with Facebook</span>
@@ -119,9 +124,11 @@
                 Create an Account
               </a>
             </div>
-            <div class="flex justify-between items-center pt-14">
-              <span class="text-gray-500">© 2021 Dotra. All rights reserved.</span>
-              <span class="flex items-center space-x-1">
+            <div
+              class="flex flex-wrap gap-y-2 justify-between items-center pt-14 text-center whitespace-nowrap"
+            >
+              <span class="flex-1 text-gray-500">© 2021 Dotra. All rights reserved.</span>
+              <span class="flex flex-1 justify-center items-center space-x-1">
                 <a href="#" class="text-gray-500 hover:text-gray-600">Terms of Service</a>
                 <span class="text-gray-500">&#183;</span>
                 <a href="#" class="text-gray-500 hover:text-gray-600">Privacy Policy</a>
